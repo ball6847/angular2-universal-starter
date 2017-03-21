@@ -9,7 +9,6 @@
     "url": "https://github.com/alexpods/angular2-universal-starter.git"
   },
   "scripts": {
-    // "postinstall": "typings install && npm run webdriver:update",
     "reinstall": "npm run clean:dist && rimraf node_modules && npm install",
     "dev": "node tools/dev.js",
     "prod": "node tools/prod.js",
@@ -31,8 +30,6 @@
     "clean:logs": "rimraf logs",
     "status": "pm2 show $(node -e \"console.log(require('./ecosystem.json').name)\")",
     "logs": "pm2 logs $(node -e \"console.log(require('./ecosystem.json').name)\")",
-    // "webdriver:update": "webdriver-manager update",
-    // "webdriver:start": "webdriver-manager start",
     "pm2": "pm2",
     "webpack": "webpack",
     "typings": "typings",
@@ -83,7 +80,8 @@
     "rimraf": "^2.5.2",
     "ts-loader": "^0.8.0",
     "tsd": "^0.6.5",
-    "tslint": "^3.4.0",
+    "ts-node": "~2.0.0",
+    "tslint": "~4.4.2",
     "typescript": "~2.0.0",
     "typings": "0.6.8",
     "webpack": "1.13.1",
